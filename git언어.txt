@@ -1,0 +1,19 @@
+git 명령어
+git status	//변경사항 확인
+git add .	//변경사항 추가
+git commit -m '커밋이름' 		//커밋이름작성
+git remote add origin 레파지토리주소		//원격저장소연결
+git push origin master	//master 브랜치 연결
+
+브랜치 변경
+git branch	//브랜치 확인
+git branch test	//test라는 브랜치 생성
+git checkout test 	//test 브랜치 접속
+
+깃허브 사이트에서 변경 된 브랜치로 push할 경우 pull Request 가능
+master	<- 		test		//pull Request 진행
+master에 커밋 연결됨
+
+내려받기
+cmd로 자신에 디렉터리로 들어가서 
+git clone 레파지토리주소		//그 디렉터리에 다운완료 됨 
