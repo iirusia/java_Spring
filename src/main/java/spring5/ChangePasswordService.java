@@ -1,6 +1,11 @@
 package spring5;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class ChangePasswordService {
+		//@Autowired를 붙이면 설정 클래스에서 의존을 주입하지 않아도 된다. 필드에 @Autowired 애노테이션이 붙어 있으면
+		//스프링이 해당 타입의 빈 객체를  찾아서 필드에 할당한다 @Autowired는 메서드도 가능하고 변수에도 붙일 수 있다.
+		@Autowired
 		private MemberDao memberDao;
 		
 		public void changePassword(String email,String oldPwd,String newPwd) {

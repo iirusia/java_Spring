@@ -2,7 +2,10 @@ package spring5;
 
 import java.time.LocalDateTime;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class MemberRegisterService {
+	@Autowired
 	private MemberDao memberDao;
 
 	public MemberRegisterService(MemberDao memberDao) {
